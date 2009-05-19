@@ -10,7 +10,7 @@ customized, and the purpose of this library is to make customization
 easy.  Plotting happens on frames, which are rectangular areas.  A DSL
 is available for splitting frames.  A frame combined with a mapping
 from plot coordinates to Cairo coordinates is a drawing area.
-Functions names plot-* take a frame, set up and return a drawing area
+Functions named plot-* take a frame, set up and return a drawing area
 (on which you can continue drawing), while draw-* functions draw on an
 existing drawing area.
 

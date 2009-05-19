@@ -1,0 +1,6 @@
+- object oriented axis mappings with log scales etc
+
+- clean up text-drawing functions, create a high-level one (?)
+
+- contour plots
+

@@ -1,0 +1,22 @@
+Cl-2d is a two-dimensional graph library for Common Lisp.  It builds
+on cl-cairo2 and thus uses the Cairo library, which provides various
+backends, including pixel-based (eg PNG, X11) and vector-based (PDF,
+SVG, PS) ones.  It is meant solely for 2-dimensional plotting (hence
+the name).
+
+Cl-2d is designed to be extensible instead of providing a plethora of
+"canned" functions.  Most plots used in scientific visualization are
+customized, and the purpose of this library is to make customization
+easy.  Plotting happens on frames, which are rectangular areas.  A DSL
+is available for splitting frames.  A frame combined with a mapping
+from plot coordinates to Cairo coordinates is a drawing area.
+Functions names plot-* take a frame, set up and return a drawing area
+(on which you can continue drawing), while draw-* functions draw on an
+existing drawing area.
+
+See the example/ directory for a wide variety of examples.
+
+This library is still under development, suggestions are welcome.
+
+Tamas K Papp, 2009.
+tkpapp@gmail.com
